@@ -17,11 +17,7 @@ const markup = galleryItems
 list.insertAdjacentHTML("beforeend", markup);
 
 let gallery = new SimpleLightbox(".gallery a", {
-  captions: true,
-  captionSelector: "img",
+  captionsData: "alt",
   captionPosition: "bottom",
-  captionType: "attr",
-});
-gallery.on("show.simplelightbox", function () {
-  // do something…
+  captionDelay: 250,
 });
