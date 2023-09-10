@@ -21,7 +21,6 @@ let gallery = new SimpleLightbox(".gallery a", {
   captionSelector: "img",
   captionPosition: "bottom",
   captionType: "attr",
-  captionsData: description,
 });
 gallery.on("show.simplelightbox", function () {
   // do something…
